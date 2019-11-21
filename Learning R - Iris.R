@@ -44,7 +44,7 @@ trainSet<- Iris[training_indices, ]
      
 testSet <- Iris[-training_indices, ]
      
-LinearModel<-lm(Petal.Length~ Petal.Width, trainSet)
+LinearModel<-lm(Petal.Length~ Petal.Width +0, trainSet)
      
 summary(LinearModel)
      
